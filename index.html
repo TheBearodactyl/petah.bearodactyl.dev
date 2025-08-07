@@ -22,7 +22,17 @@
 </head>
 
 <body>
-  <img src="./petah.jpg" alt="Petah">
+  <img src="./petah.jpg" alt="Petah" id="petah">
+  <audio id="hehehe" src="./petah.mp3"></audio>
+
+  <script>
+    const image = document.getElementById("petah");
+    const audio = document.getElementById("hehehe");
+
+    image.addEventListener("click", () => {
+      audio.play();
+    });
+  </script>
 </body>
 
 </html>
